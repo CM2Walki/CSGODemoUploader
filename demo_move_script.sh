@@ -3,6 +3,7 @@
 # This bash script automatically MOVES!!! .dem files to the ftp server
 # Note, that advanced checks are required to ensure we don't copy a demo that 
 # isn't currently being written/recorded
+# Make sure the user executing this script has the proper ssh key in his/her .ssh folder
 
 # First make sure our directory exists, create it if not
 ssh -p 5011 root@me2stats.eu "mkdir -p /etc/nginx/html/gotv/srv_ip/$SRCDS_IP/$SRCDS_PORT"
